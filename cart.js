@@ -1,5 +1,3 @@
-
-
 const shoe1 = {
   name: "dunks",
   brand: "Nike",
@@ -7,6 +5,7 @@ const shoe1 = {
   size: 10,
   laces: "Black",
   price: 115,
+  stock: 10,
 };
 
 const shoe2 = {
@@ -16,6 +15,7 @@ const shoe2 = {
   size: 12,
   laces: "Black",
   price: 180,
+  stock: 5,
 };
 
 const shoe3 = {
@@ -25,6 +25,7 @@ const shoe3 = {
   size: 11,
   laces: "White",
   price: 230,
+  stock: 12,
 };
 
 const shoe4 = {
@@ -34,6 +35,7 @@ const shoe4 = {
   size: 9.5,
   laces: "Black",
   price: 100,
+  stock: 6,
 };
 
 const shoe5 = {
@@ -43,6 +45,7 @@ const shoe5 = {
   size: 10,
   laces: "White",
   price: 90,
+  stock: 1,
 };
 
 const shoe6 = {
@@ -52,6 +55,7 @@ const shoe6 = {
   size: 11,
   laces: "White",
   price: 65,
+  stock: 8,
 };
 
 const shoe7 = {
@@ -61,6 +65,7 @@ const shoe7 = {
   size: 8.5,
   laces: "White",
   price: 70,
+  stock: 14,
 };
 
 const shoe8 = {
@@ -70,6 +75,7 @@ const shoe8 = {
   size: 9,
   laces: "None",
   price: 60,
+  stock: 22,
 };
 
 const shoe9 = {
@@ -79,6 +85,7 @@ const shoe9 = {
   size: 10.5,
   laces: "Grey",
   price: 200,
+  stock: 4,
 };
 
 const shoe10 = {
@@ -88,6 +95,7 @@ const shoe10 = {
   size: 11,
   laces: "White",
   price: 110,
+  stock: 17,
 };
 
 const shoe11 = {
@@ -97,6 +105,7 @@ const shoe11 = {
   size: 10,
   laces: "White",
   price: 140,
+  stock: 3,
 };
 
 const shoe12 = {
@@ -106,6 +115,7 @@ const shoe12 = {
   size: 11.5,
   laces: "White",
   price: 115,
+  stock: 25,
 };
 
 const shoe13 = {
@@ -115,6 +125,7 @@ const shoe13 = {
   size: 10,
   laces: "White",
   price: 130,
+  stock: 9,
 };
 
 const shoe14 = {
@@ -124,6 +135,7 @@ const shoe14 = {
   size: 9.5,
   laces: "White",
   price: 75,
+  stock: 11,
 };
 
 const shoe15 = {
@@ -133,6 +145,7 @@ const shoe15 = {
   size: 10,
   laces: "Red",
   price: 85,
+  stock: 6,
 };
 
 const shoe16 = {
@@ -142,6 +155,7 @@ const shoe16 = {
   size: 11,
   laces: "White",
   price: 85,
+  stock: 13,
 };
 
 const shoe17 = {
@@ -151,6 +165,7 @@ const shoe17 = {
   size: 10,
   laces: "Chalk",
   price: 90,
+  stock: 15,
 };
 
 const shoe18 = {
@@ -160,6 +175,7 @@ const shoe18 = {
   size: 12,
   laces: "Black",
   price: 170,
+  stock: 7,
 };
 
 const shoe19 = {
@@ -169,6 +185,7 @@ const shoe19 = {
   size: 11,
   laces: "Taslan Brown",
   price: 198,
+  stock: 5,
 };
 
 const shoe20 = {
@@ -178,6 +195,7 @@ const shoe20 = {
   size: 10.5,
   laces: "Black",
   price: 145,
+  stock: 19,
 };
 
 const shoe21 = {
@@ -187,6 +205,7 @@ const shoe21 = {
   size: 9,
   laces: "Grey",
   price: 120,
+  stock: 8,
 };
 
 const shoe22 = {
@@ -196,6 +215,7 @@ const shoe22 = {
   size: 11,
   laces: "Blue",
   price: 140,
+  stock: 12,
 };
 
 const shoe23 = {
@@ -205,6 +225,7 @@ const shoe23 = {
   size: 10,
   laces: "None",
   price: 50,
+  stock: 30,
 };
 
 const shoe24 = {
@@ -214,6 +235,7 @@ const shoe24 = {
   size: 11,
   laces: "None",
   price: 160,
+  stock: 2,
 };
 
 const shoe25 = {
@@ -223,6 +245,33 @@ const shoe25 = {
   size: 10,
   laces: "Quicklace Cord",
   price: 200,
+  stock: 4,
 };
 
-export const list = [shoe1,shoe2,shoe3,shoe4,shoe5,shoe6,shoe7,shoe8,shoe9,shoe10,shoe11,shoe12,shoe13,shoe14,shoe15,shoe16,shoe17,shoe18,shoe19,shoe20,shoe21,shoe22,shoe23,shoe24,shoe25];
+export const list = [
+  shoe1,
+  shoe2,
+  shoe3,
+  shoe4,
+  shoe5,
+  shoe6,
+  shoe7,
+  shoe8,
+  shoe9,
+  shoe10,
+  shoe11,
+  shoe12,
+  shoe13,
+  shoe14,
+  shoe15,
+  shoe16,
+  shoe17,
+  shoe18,
+  shoe19,
+  shoe20,
+  shoe21,
+  shoe22,
+  shoe23,
+  shoe24,
+  shoe25,
+];
