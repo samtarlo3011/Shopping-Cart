@@ -225,4 +225,4 @@ const shoe25 = {
   price: 200,
 };
 
-const list = [shoe1,shoe2,shoe3,shoe4,shoe5,shoe6,shoe7,shoe8,shoe9,shoe10,shoe11,shoe12,shoe13,shoe14,shoe15,shoe16,shoe17,shoe18,shoe19,shoe20,shoe21,shoe22,shoe23,shoe24,shoe25];
+export const list = [shoe1,shoe2,shoe3,shoe4,shoe5,shoe6,shoe7,shoe8,shoe9,shoe10,shoe11,shoe12,shoe13,shoe14,shoe15,shoe16,shoe17,shoe18,shoe19,shoe20,shoe21,shoe22,shoe23,shoe24,shoe25];
