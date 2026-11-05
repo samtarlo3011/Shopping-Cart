@@ -1,0 +1,46 @@
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.shero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  background-image:
+    linear-gradient(rgba(255, 0, 0, 0.8), rgba(211, 46, 95, 0.8)),
+    url("shoe_pile.jpg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero {
+
+  height: 30%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hhead {
+  font-size: 14rem;
+}
+#hshead {
+  font-size: 3rem;
+}
+#hbtn{
+    color: white;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 4rem;
+    font-size: 14px;
+    background-color: rgba(255, 56, 56, 0.8)
+
+}
