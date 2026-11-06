@@ -1,4 +1,5 @@
 const shoe1 = {
+  idnum: 1,
   name: "dunks",
   brand: "Nike",
   colorway: "Panda",
@@ -6,9 +7,11 @@ const shoe1 = {
   laces: "Black",
   price: 115,
   stock: 10,
+  img: "shoe_pile.jpg"
 };
 
 const shoe2 = {
+  idnum: 2,
   name: "jordans",
   brand: "Jordan",
   colorway: "Chicago Air Jordan 1",
@@ -19,6 +22,7 @@ const shoe2 = {
 };
 
 const shoe3 = {
+  idnum: 3,
   name: "yeezys",
   brand: "Adidas",
   colorway: "Zebra 350 V2",
@@ -29,6 +33,7 @@ const shoe3 = {
 };
 
 const shoe4 = {
+  idnum: 4,
   name: "sambas",
   brand: "Adidas",
   colorway: "Core Black White",
@@ -39,6 +44,7 @@ const shoe4 = {
 };
 
 const shoe5 = {
+  idnum: 5,
   name: "superstars",
   brand: "Adidas",
   colorway: "White Black Shelltoe",
@@ -49,6 +55,7 @@ const shoe5 = {
 };
 
 const shoe6 = {
+  idnum: 6,
   name: "chuckTaylors",
   brand: "Converse",
   colorway: "Classic Black High Top",
@@ -59,6 +66,7 @@ const shoe6 = {
 };
 
 const shoe7 = {
+  idnum: 7,
   name: "oldSkools",
   brand: "Vans",
   colorway: "Black and White Checkerboard",
@@ -69,6 +77,7 @@ const shoe7 = {
 };
 
 const shoe8 = {
+  idnum: 8,
   name: "slipOns",
   brand: "Vans",
   colorway: "Classic Canvas Off White",
@@ -79,6 +88,7 @@ const shoe8 = {
 };
 
 const shoe9 = {
+  idnum: 9,
   name: "newBalance990s",
   brand: "New Balance",
   colorway: "Grey Matter V6",
@@ -89,6 +99,7 @@ const shoe9 = {
 };
 
 const shoe10 = {
+  idnum: 10,
   name: "newBalance550s",
   brand: "New Balance",
   colorway: "White Green",
@@ -99,6 +110,7 @@ const shoe10 = {
 };
 
 const shoe11 = {
+  idnum: 11,
   name: "gelLyteIIIs",
   brand: "Asics",
   colorway: "Salmon Toe",
@@ -109,6 +121,7 @@ const shoe11 = {
 };
 
 const shoe12 = {
+  idnum: 12,
   name: "airForce1s",
   brand: "Nike",
   colorway: "Triple White",
@@ -119,6 +132,7 @@ const shoe12 = {
 };
 
 const shoe13 = {
+  idnum: 13,
   name: "airMax90s",
   brand: "Nike",
   colorway: "Infrared",
@@ -129,6 +143,7 @@ const shoe13 = {
 };
 
 const shoe14 = {
+  idnum: 14,
   name: "suedes",
   brand: "Puma",
   colorway: "Classic Black White Suede",
@@ -139,6 +154,7 @@ const shoe14 = {
 };
 
 const shoe15 = {
+  idnum: 15,
   name: "clydes",
   brand: "Puma",
   colorway: "Vintage Red Gold",
@@ -149,6 +165,7 @@ const shoe15 = {
 };
 
 const shoe16 = {
+  idnum: 16,
   name: "classicLeathers",
   brand: "Reebok",
   colorway: "White Gum",
@@ -159,6 +176,7 @@ const shoe16 = {
 };
 
 const shoe17 = {
+  idnum: 17,
   name: "clubCs",
   brand: "Reebok",
   colorway: "Vintage Chalk Green",
@@ -169,6 +187,7 @@ const shoe17 = {
 };
 
 const shoe18 = {
+  idnum: 18,
   name: "docMartens1460s",
   brand: "Dr. Martens",
   colorway: "Cherry Red Smooth Leather",
@@ -179,6 +198,7 @@ const shoe18 = {
 };
 
 const shoe19 = {
+  idnum: 19,
   name: "timberlands",
   brand: "Timberland",
   colorway: "6-Inch Premium Wheat",
@@ -189,6 +209,7 @@ const shoe19 = {
 };
 
 const shoe20 = {
+  idnum: 20,
   name: "HokaCliftons",
   brand: "Hoka One One",
   colorway: "Black White Clifton 9",
@@ -199,6 +220,7 @@ const shoe20 = {
 };
 
 const shoe21 = {
+  idnum: 21,
   name: "sauconyShadows",
   brand: "Saucony",
   colorway: "Grey Navy Shadow 6000",
@@ -209,6 +231,7 @@ const shoe21 = {
 };
 
 const shoe22 = {
+  idnum: 22,
   name: "brooksGhosts",
   brand: "Brooks",
   colorway: "Blue Denim Ghost 15",
@@ -219,6 +242,7 @@ const shoe22 = {
 };
 
 const shoe23 = {
+  idnum: 23,
   name: "crocsClogs",
   brand: "Crocs",
   colorway: "Classic Army Green",
@@ -229,6 +253,7 @@ const shoe23 = {
 };
 
 const shoe24 = {
+  idnum: 24,
   name: "birkenstockBostons",
   brand: "Birkenstock",
   colorway: "Taupe Suede Clog",
@@ -239,6 +264,7 @@ const shoe24 = {
 };
 
 const shoe25 = {
+  idnum: 25,
   name: "salomonXT6s",
   brand: "Salomon",
   colorway: "Black Phantom",

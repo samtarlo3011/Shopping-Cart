@@ -1,11 +1,11 @@
 import { list } from "./cart.js";
 const cart = {};
 const codes = {
-  NikeLover9000 : 0.75,
+  NikeLover9000: 0.75,
   ILOVESHOESAAAAAAAHHHHHHHH: 0.25,
-  JustinSmellsGood_Kachow : 0,
+  JustinSmellsGood_Kachow: 0,
   goycmiester: 2,
-}
+};
 function sortBrand(brand, list) {
   let finB = [];
   for (const i of list) {
@@ -69,3 +69,15 @@ function checkout(price, cart, money, code, codes) {
     }
   }
 }
+function inject(item) {
+  const container = document.querySelector(".cards");
+  container.insertAdjacentHTML(
+    "beforeend",
+    `<div class = card >
+        <h1 class = "chead"> headerheaderheaderheader</h1>
+        <h2 class ="cprice">prciepicrecpirc3epcirpceicprip3eicpirpiepic</h2>
+        <button class = "buy">buybubybubybubybubybubyubybubybubybu</button>
+      </div>`,
+  );
+}
+list.foreach((shoe) => inject(shoe));

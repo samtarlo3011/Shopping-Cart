@@ -19,7 +19,6 @@
   background-attachment: fixed;
 }
 .hero {
-
   height: 30%;
   width: 60%;
   display: flex;
@@ -35,12 +34,26 @@
 #hshead {
   font-size: 3rem;
 }
-#hbtn{
-    color: white;
-    margin-top: 1rem;
-    width: 10rem;
-    height: 4rem;
-    font-size: 14px;
-    background-color: rgba(255, 56, 56, 0.8)
-
+#hbtn {
+  color: white;
+  margin-top: 1rem;
+  width: 10rem;
+  height: 4rem;
+  font-size: 14px;
+  background-color: rgba(255, 56, 56, 0.8);
+}
+.cards {
+  display: flex;
+  justify-self: center;
+  justify-content: space-around;
+  height: 40rem;
+  width: 90vw;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: rgb(161, 11, 11);
+  border-radius: 4px;
+  height:100%;
 }
