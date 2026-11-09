@@ -7,7 +7,7 @@ const shoe1 = {
   laces: "Black",
   price: 115,
   stock: 10,
-  img: "shoe_pile.jpg"
+  img: "cart_images/1.jpg",
 };
 
 const shoe2 = {
@@ -19,6 +19,7 @@ const shoe2 = {
   laces: "Black",
   price: 180,
   stock: 5,
+  img :"cart_images/2.jpg",
 };
 
 const shoe3 = {

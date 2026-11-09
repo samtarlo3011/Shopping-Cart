@@ -74,10 +74,12 @@ function inject(item) {
   container.insertAdjacentHTML(
     "beforeend",
     `<div class = card >
-        <h1 class = "chead"> headerheaderheaderheader</h1>
-        <h2 class ="cprice">prciepicrecpirc3epcirpceicprip3eicpirpiepic</h2>
-        <button class = "buy">buybubybubybubybubybubyubybubybubybu</button>
+        <h1 class = "chead"> ${item.brand}: ${item.name}</h1>
+        <img class = "cimg" src = ${item.img}> <img>
+        <h2 class ="cprice">$${item.price}</h2>
+        <button class = "buy">Add to cart</button>
+
       </div>`,
   );
 }
-list.foreach((shoe) => inject(shoe));
+list.forEach((shoe) => inject(shoe));
