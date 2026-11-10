@@ -59,11 +59,23 @@
   width: 30%;
   background-color: rgb(161, 11, 11);
   border-radius: 4px;
+  color: white;
+  
 }
-.card h1{
+.chead {
   font-size: 3rem;
   text-align: center;
+  
 }
-.card h2{
+.cprice {
   font-size: 2rem;
 }
+.cimg{
+  height:40rem;
+  object-fit:cover;
+}
+.buy{
+  height:25px;
+  font-size: 20px;
+}
+

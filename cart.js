@@ -19,7 +19,7 @@ const shoe2 = {
   laces: "Black",
   price: 180,
   stock: 5,
-  img :"cart_images/2.jpg",
+  img: "cart_images/2.jpg",
 };
 
 const shoe3 = {
@@ -31,6 +31,7 @@ const shoe3 = {
   laces: "White",
   price: 230,
   stock: 12,
+  img: "cart_images/3.jpg",
 };
 
 const shoe4 = {
@@ -42,6 +43,7 @@ const shoe4 = {
   laces: "Black",
   price: 100,
   stock: 6,
+  img: "cart_images/4.jpg",
 };
 
 const shoe5 = {
@@ -53,6 +55,7 @@ const shoe5 = {
   laces: "White",
   price: 90,
   stock: 1,
+  img: "cart_images/5.jpg",
 };
 
 const shoe6 = {
@@ -64,6 +67,7 @@ const shoe6 = {
   laces: "White",
   price: 65,
   stock: 8,
+  img: "cart_images/6.jpg",
 };
 
 const shoe7 = {
@@ -75,6 +79,7 @@ const shoe7 = {
   laces: "White",
   price: 70,
   stock: 14,
+  img: "cart_images/7.jpg",
 };
 
 const shoe8 = {
@@ -86,6 +91,7 @@ const shoe8 = {
   laces: "None",
   price: 60,
   stock: 22,
+  img: "cart_images/8.jpg",
 };
 
 const shoe9 = {
@@ -97,6 +103,7 @@ const shoe9 = {
   laces: "Grey",
   price: 200,
   stock: 4,
+  img: "cart_images/9.jpg",
 };
 
 const shoe10 = {
@@ -108,6 +115,7 @@ const shoe10 = {
   laces: "White",
   price: 110,
   stock: 17,
+  img: "cart_images/10.jpg",
 };
 
 const shoe11 = {
@@ -119,6 +127,7 @@ const shoe11 = {
   laces: "White",
   price: 140,
   stock: 3,
+  img: "cart_images/11.jpg",
 };
 
 const shoe12 = {
@@ -130,6 +139,7 @@ const shoe12 = {
   laces: "White",
   price: 115,
   stock: 25,
+  img: "cart_images/12.jpg",
 };
 
 const shoe13 = {
@@ -141,6 +151,7 @@ const shoe13 = {
   laces: "White",
   price: 130,
   stock: 9,
+  img: "cart_images/13.jpg",
 };
 
 const shoe14 = {
@@ -152,6 +163,7 @@ const shoe14 = {
   laces: "White",
   price: 75,
   stock: 11,
+  img: "cart_images/14.jpg",
 };
 
 const shoe15 = {
@@ -163,6 +175,7 @@ const shoe15 = {
   laces: "Red",
   price: 85,
   stock: 6,
+  img: "cart_images/15.jpg",
 };
 
 const shoe16 = {
@@ -174,6 +187,7 @@ const shoe16 = {
   laces: "White",
   price: 85,
   stock: 13,
+  img: "cart_images/15.jpg",
 };
 
 const shoe17 = {
@@ -185,6 +199,7 @@ const shoe17 = {
   laces: "Chalk",
   price: 90,
   stock: 15,
+  img: "cart_images/15.jpg",
 };
 
 const shoe18 = {
@@ -195,6 +210,7 @@ const shoe18 = {
   size: 12,
   laces: "Black",
   price: 170,
+  img: "cart_images/15.jpg",
   stock: 7,
 };
 
@@ -207,6 +223,7 @@ const shoe19 = {
   laces: "Taslan Brown",
   price: 198,
   stock: 5,
+  img: "cart_images/15.jpg",
 };
 
 const shoe20 = {
@@ -217,6 +234,7 @@ const shoe20 = {
   size: 10.5,
   laces: "Black",
   price: 145,
+  img: "cart_images/15.jpg",
   stock: 19,
 };
 
@@ -229,6 +247,7 @@ const shoe21 = {
   laces: "Grey",
   price: 120,
   stock: 8,
+  img: "cart_images/15.jpg",
 };
 
 const shoe22 = {
@@ -240,6 +259,7 @@ const shoe22 = {
   laces: "Blue",
   price: 140,
   stock: 12,
+  img: "cart_images/15.jpg",
 };
 
 const shoe23 = {
@@ -250,6 +270,7 @@ const shoe23 = {
   size: 10,
   laces: "None",
   price: 50,
+  img: "cart_images/15.jpg",
   stock: 30,
 };
 
@@ -261,6 +282,7 @@ const shoe24 = {
   size: 11,
   laces: "None",
   price: 160,
+  img: "cart_images/15.jpg",
   stock: 2,
 };
 
@@ -273,6 +295,7 @@ const shoe25 = {
   laces: "Quicklace Cord",
   price: 200,
   stock: 4,
+  img: "cart_images/15.jpg",
 };
 
 export const list = [
