@@ -1,5 +1,5 @@
-const shoe1 = {
-  idnum: 1,
+const shoe0 = {
+  idnum: 0,
   name: "dunks",
   brand: "Nike",
   colorway: "Panda",
@@ -10,8 +10,8 @@ const shoe1 = {
   img: "cart_images/1.jpg",
 };
 
-const shoe2 = {
-  idnum: 2,
+const shoe1 = {
+  idnum: 1,
   name: "jordans",
   brand: "Jordan",
   colorway: "Chicago Air Jordan 1",
@@ -22,8 +22,8 @@ const shoe2 = {
   img: "cart_images/2.jpg",
 };
 
-const shoe3 = {
-  idnum: 3,
+const shoe2 = {
+  idnum: 2,
   name: "yeezys",
   brand: "Adidas",
   colorway: "Zebra 350 V2",
@@ -34,8 +34,8 @@ const shoe3 = {
   img: "cart_images/3.jpg",
 };
 
-const shoe4 = {
-  idnum: 4,
+const shoe3 = {
+  idnum: 3,
   name: "sambas",
   brand: "Adidas",
   colorway: "Core Black White",
@@ -46,8 +46,8 @@ const shoe4 = {
   img: "cart_images/4.jpg",
 };
 
-const shoe5 = {
-  idnum: 5,
+const shoe4 = {
+  idnum: 4,
   name: "superstars",
   brand: "Adidas",
   colorway: "White Black Shelltoe",
@@ -58,8 +58,8 @@ const shoe5 = {
   img: "cart_images/5.jpg",
 };
 
-const shoe6 = {
-  idnum: 6,
+const shoe5 = {
+  idnum: 5,
   name: "chuckTaylors",
   brand: "Converse",
   colorway: "Classic Black High Top",
@@ -70,8 +70,8 @@ const shoe6 = {
   img: "cart_images/6.jpg",
 };
 
-const shoe7 = {
-  idnum: 7,
+const shoe6 = {
+  idnum: 6,
   name: "oldSkools",
   brand: "Vans",
   colorway: "Black and White Checkerboard",
@@ -82,8 +82,8 @@ const shoe7 = {
   img: "cart_images/7.jpg",
 };
 
-const shoe8 = {
-  idnum: 8,
+const shoe7 = {
+  idnum: 7,
   name: "slipOns",
   brand: "Vans",
   colorway: "Classic Canvas Off White",
@@ -94,8 +94,8 @@ const shoe8 = {
   img: "cart_images/8.jpg",
 };
 
-const shoe9 = {
-  idnum: 9,
+const shoe8 = {
+  idnum: 8,
   name: "newBalance990s",
   brand: "New Balance",
   colorway: "Grey Matter V6",
@@ -106,8 +106,8 @@ const shoe9 = {
   img: "cart_images/9.jpg",
 };
 
-const shoe10 = {
-  idnum: 10,
+const shoe9 = {
+  idnum: 9,
   name: "newBalance550s",
   brand: "New Balance",
   colorway: "White Green",
@@ -118,8 +118,8 @@ const shoe10 = {
   img: "cart_images/10.jpg",
 };
 
-const shoe11 = {
-  idnum: 11,
+const shoe10 = {
+  idnum: 10,
   name: "gelLyteIIIs",
   brand: "Asics",
   colorway: "Salmon Toe",
@@ -130,8 +130,8 @@ const shoe11 = {
   img: "cart_images/11.jpg",
 };
 
-const shoe12 = {
-  idnum: 12,
+const shoe11 = {
+  idnum: 11,
   name: "airForce1s",
   brand: "Nike",
   colorway: "Triple White",
@@ -142,8 +142,8 @@ const shoe12 = {
   img: "cart_images/12.jpg",
 };
 
-const shoe13 = {
-  idnum: 13,
+const shoe12 = {
+  idnum: 12,
   name: "airMax90s",
   brand: "Nike",
   colorway: "Infrared",
@@ -154,8 +154,8 @@ const shoe13 = {
   img: "cart_images/13.jpg",
 };
 
-const shoe14 = {
-  idnum: 14,
+const shoe13 = {
+  idnum: 13,
   name: "suedes",
   brand: "Puma",
   colorway: "Classic Black White Suede",
@@ -166,8 +166,8 @@ const shoe14 = {
   img: "cart_images/14.jpg",
 };
 
-const shoe15 = {
-  idnum: 15,
+const shoe14 = {
+  idnum: 14,
   name: "clydes",
   brand: "Puma",
   colorway: "Vintage Red Gold",
@@ -178,8 +178,8 @@ const shoe15 = {
   img: "cart_images/15.jpg",
 };
 
-const shoe16 = {
-  idnum: 16,
+const shoe15 = {
+  idnum: 15,
   name: "classicLeathers",
   brand: "Reebok",
   colorway: "White Gum",
@@ -190,8 +190,8 @@ const shoe16 = {
   img: "cart_images/15.jpg",
 };
 
-const shoe17 = {
-  idnum: 17,
+const shoe16 = {
+  idnum: 16,
   name: "clubCs",
   brand: "Reebok",
   colorway: "Vintage Chalk Green",
@@ -202,8 +202,8 @@ const shoe17 = {
   img: "cart_images/15.jpg",
 };
 
-const shoe18 = {
-  idnum: 18,
+const shoe17 = {
+  idnum: 17,
   name: "docMartens1460s",
   brand: "Dr. Martens",
   colorway: "Cherry Red Smooth Leather",
@@ -214,8 +214,8 @@ const shoe18 = {
   stock: 7,
 };
 
-const shoe19 = {
-  idnum: 19,
+const shoe18 = {
+  idnum: 18,
   name: "timberlands",
   brand: "Timberland",
   colorway: "6-Inch Premium Wheat",
@@ -226,8 +226,8 @@ const shoe19 = {
   img: "cart_images/15.jpg",
 };
 
-const shoe20 = {
-  idnum: 20,
+const shoe19 = {
+  idnum: 19,
   name: "HokaCliftons",
   brand: "Hoka One One",
   colorway: "Black White Clifton 9",
@@ -238,8 +238,8 @@ const shoe20 = {
   stock: 19,
 };
 
-const shoe21 = {
-  idnum: 21,
+const shoe20 = {
+  idnum: 20,
   name: "sauconyShadows",
   brand: "Saucony",
   colorway: "Grey Navy Shadow 6000",
@@ -250,8 +250,8 @@ const shoe21 = {
   img: "cart_images/15.jpg",
 };
 
-const shoe22 = {
-  idnum: 22,
+const shoe21 = {
+  idnum: 21,
   name: "brooksGhosts",
   brand: "Brooks",
   colorway: "Blue Denim Ghost 15",
@@ -262,8 +262,8 @@ const shoe22 = {
   img: "cart_images/15.jpg",
 };
 
-const shoe23 = {
-  idnum: 23,
+const shoe22 = {
+  idnum: 22,
   name: "crocsClogs",
   brand: "Crocs",
   colorway: "Classic Army Green",
@@ -274,8 +274,8 @@ const shoe23 = {
   stock: 30,
 };
 
-const shoe24 = {
-  idnum: 24,
+const shoe23 = {
+  idnum: 23,
   name: "birkenstockBostons",
   brand: "Birkenstock",
   colorway: "Taupe Suede Clog",
@@ -286,8 +286,8 @@ const shoe24 = {
   stock: 2,
 };
 
-const shoe25 = {
-  idnum: 25,
+const shoe24 = {
+  idnum: 24,
   name: "salomonXT6s",
   brand: "Salomon",
   colorway: "Black Phantom",
@@ -299,6 +299,7 @@ const shoe25 = {
 };
 
 export const list = [
+  shoe0,
   shoe1,
   shoe2,
   shoe3,
@@ -323,5 +324,4 @@ export const list = [
   shoe22,
   shoe23,
   shoe24,
-  shoe25,
 ];

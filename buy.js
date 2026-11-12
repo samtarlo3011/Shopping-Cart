@@ -6,33 +6,7 @@ const codes = {
   JustinSmellsGood_Kachow: 0,
   goycmiester: 2,
 };
-function sortBrand(brand, list) {
-  let finB = [];
-  for (const i of list) {
-    if (i.brand === brand) {
-      finB.push(i);
-    }
-  }
-  return finB;
-}
-function sortSize(size, list) {
-  let finS = [];
-  for (const i of list) {
-    if (i.size === size) {
-      finS.push(i);
-    }
-  }
-  return finS;
-}
-function sortPrice(PM, PL, list) {
-  let finP = [];
-  for (const i of list) {
-    if (i.price >= PL && i.price <= PM) {
-      finP.push(i);
-    }
-  }
-  return finP;
-}
+
 function addToCart(cart, item) {
   if (item.stock >= 1) {
     if (cart.includes(item)) {
@@ -73,13 +47,22 @@ function inject(item) {
   const container = document.querySelector(".cards");
   container.insertAdjacentHTML(
     "beforeend",
-    `<div class = card >
+    `<div class = card data-item="${item.idnum}>
         <h1 class = "chead"> ${item.brand}: ${item.name}</h1>
         <img class = "cimg" src = ${item.img}> <img>
         <h2 class ="cprice">$${item.price}</h2>
-        <button class = "buy">Add to cart</button>
-
+        <button class = "buy" >Add to cart</button>
       </div>`,
   );
 }
 list.forEach((shoe) => inject(shoe));
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) =>
+  button.addEventListener("click", function (event) {
+    addToCart(
+      cart,
+      list[event.target.closest(".card").getAttribute("data-item")],
+    );
+    console.log(cart);
+  }),
+);
