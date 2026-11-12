@@ -34,14 +34,6 @@
 #hshead {
   font-size: 3rem;
 }
-#hbtn {
-  color: white;
-  margin-top: 1rem;
-  width: 10rem;
-  height: 4rem;
-  font-size: 14px;
-  background-color: rgba(255, 56, 56, 0.8);
-}
 .cards {
   margin-top: 2rem;
   display: flex;
@@ -60,22 +52,39 @@
   background-color: rgb(161, 11, 11);
   border-radius: 4px;
   color: white;
-  
 }
 .chead {
   font-size: 3rem;
   text-align: center;
-  
 }
 .cprice {
   font-size: 2rem;
 }
-.cimg{
-  height:40rem;
-  object-fit:cover;
+.cimg {
+  height: 40rem;
+  object-fit: cover;
 }
-.buy{
-  height:25px;
+.buy {
+  height: 25px;
   font-size: 20px;
 }
-
+#atc {
+  display: flex;
+  background-image: url("cart_images/cart.jpg");
+  background-position: center;
+  background-size: contain;
+  width: 15rem;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  text-shadow:
+    -2px -2px 0 white,
+    2px -2px 0 white ,
+    -2px 2px 0 white,
+    2px 2px 0 white;
+}
