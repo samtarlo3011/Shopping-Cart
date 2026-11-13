@@ -9,11 +9,13 @@ const codes = {
 
 function addToCart(cart, item) {
   if (item.stock >= 1) {
-    if (cart.includes(item)) {
+    if (Object.values(cart).includes(item)) {
       cart[item].count += 1;
+      cart[item].stock-=1
     } else {
-      cart[item] = item;
+      cart[item.name] = item;
       item.count = 1;
+      cart[item].stock-=1
     }
   } else {
     return "None in stock";
@@ -47,7 +49,7 @@ function inject(item) {
   const container = document.querySelector(".cards");
   container.insertAdjacentHTML(
     "beforeend",
-    `<div class = card data-item="${item.idnum}>
+    `<div class="card" data-item="${item.idnum}">
         <h1 class = "chead"> ${item.brand}: ${item.name}</h1>
         <img class = "cimg" src = ${item.img}> <img>
         <h2 class ="cprice">$${item.price}</h2>
@@ -65,4 +67,4 @@ buttons.forEach((button) =>
     );
     console.log(cart);
   }),
-);
+);``
