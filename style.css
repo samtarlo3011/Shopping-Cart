@@ -68,7 +68,7 @@
   height: 25px;
   font-size: 20px;
 }
-#atc {
+#vc {
   display: flex;
   background-image: url("cart_images/cart.jpg");
   background-position: center;
@@ -87,4 +87,15 @@
     2px -2px 0 white ,
     -2px 2px 0 white,
     2px 2px 0 white;
+}
+#cart{
+  display: none;
+  background-color: black;
+  width: 80vw;
+  height: 80vh;
+  font-size: 3rem;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }

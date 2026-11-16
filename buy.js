@@ -10,12 +10,12 @@ const codes = {
 function addToCart(cart, item) {
   if (item.stock >= 1) {
     if (Object.values(cart).includes(item)) {
-      cart[item].count += 1;
-      cart[item].stock-=1
+      item.count += 1;
+      item.stock -= 1;
     } else {
       cart[item.name] = item;
       item.count = 1;
-      cart[item].stock-=1
+      item.stock -= 1;
     }
   } else {
     return "None in stock";
@@ -45,8 +45,7 @@ function checkout(price, cart, money, code, codes) {
     }
   }
 }
-function inject(item) {
-  const container = document.querySelector(".cards");
+function inject(item, container) {
   container.insertAdjacentHTML(
     "beforeend",
     `<div class="card" data-item="${item.idnum}">
@@ -57,8 +56,8 @@ function inject(item) {
       </div>`,
   );
 }
-list.forEach((shoe) => inject(shoe));
-const buttons = document.querySelectorAll("button");
+list.forEach((shoe) => inject(shoe, document.querySelector(".cards")));
+const buttons = document.querySelectorAll(".buy");
 buttons.forEach((button) =>
   button.addEventListener("click", function (event) {
     addToCart(
@@ -67,4 +66,24 @@ buttons.forEach((button) =>
     );
     console.log(cart);
   }),
-);``
+);
+
+
+const cartView = document.getElementById("cart");
+
+const vc = document.getElementById("vc");
+vc.addEventListener("click", function () {
+  cartView.style.display = "flex";
+  createCart(cart, cartView);
+});
+
+const ec = document.getElementById("ec");
+ec.addEventListener("click", function () {
+  cartView.style.display = "none";
+});
+
+function createCart(cart, container) {
+  Object.values(cart).forEach((item) => {
+    inject(item, container);
+  });
+}
