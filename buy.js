@@ -56,6 +56,17 @@ function inject(item, container) {
       </div>`,
   );
 }
+function injectC(item, container) {
+  container.insertAdjacentHTML(
+    "beforeend",
+    `<div class="ccard" data-item="${item.idnum}">
+        <h1 class = "cchead"> ${item.brand}: ${item.name}</h1>
+        <img class = "ccimg" src = ${item.img}> <img>
+        <h2 class ="ccount">Count:${item.count}</h2>
+        <button class = "remove" >Remove From Cart</button>
+      </div>`,
+  );
+}
 list.forEach((shoe) => inject(shoe, document.querySelector(".cards")));
 const buttons = document.querySelectorAll(".buy");
 buttons.forEach((button) =>
@@ -75,15 +86,21 @@ const vc = document.getElementById("vc");
 vc.addEventListener("click", function () {
   cartView.style.display = "flex";
   createCart(cart, cartView);
+  cartView.insertAdjacentHTML(
+    "beforeend",
+    `<p id = "total">${price(cart)}</p>`,
+  );
 });
 
 const ec = document.getElementById("ec");
 ec.addEventListener("click", function () {
+  cartView.querySelectorAll(".ccard").forEach((el) => {
+    el.remove();
+  });
   cartView.style.display = "none";
 });
-
 function createCart(cart, container) {
   Object.values(cart).forEach((item) => {
-    inject(item, container);
+    injectC(item, container);
   });
 }
