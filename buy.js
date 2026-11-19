@@ -21,14 +21,18 @@ function addToCart(cart, item) {
     return "None in stock";
   }
 }
-function removeFromCart(cart, item) {
-  cart[item].count -= 1;
+function removeFromCart(item) {
+  item.count -= 1;
   item.stock += 1;
+  if (item.count === 0) {
+    delete cart[item.name];
+  }
+  document.getElementById("cart")
 }
 function price(cart) {
   let p = 0;
-  for (const i of cart) {
-    p += i.price;
+  for (const [key, value] of Object.entries(cart)) {
+    p += value.price * value.count;
   }
   return p;
 }
@@ -59,7 +63,7 @@ function inject(item, container) {
 function injectC(item, container) {
   container.insertAdjacentHTML(
     "beforeend",
-    `<div class="ccard" data-item="${item.idnum}">
+    `<div class="ccard" data-item="${item.name}">
         <h1 class = "cchead"> ${item.brand}: ${item.name}</h1>
         <img class = "ccimg" src = ${item.img}> <img>
         <h2 class ="ccount">Count:${item.count}</h2>
@@ -75,10 +79,8 @@ buttons.forEach((button) =>
       cart,
       list[event.target.closest(".card").getAttribute("data-item")],
     );
-    console.log(cart);
   }),
 );
-
 
 const cartView = document.getElementById("cart");
 
@@ -97,10 +99,23 @@ ec.addEventListener("click", function () {
   cartView.querySelectorAll(".ccard").forEach((el) => {
     el.remove();
   });
+  const p = document.getElementById("total");
+  p.remove();
   cartView.style.display = "none";
 });
 function createCart(cart, container) {
   Object.values(cart).forEach((item) => {
     injectC(item, container);
   });
+  const remove = document.querySelectorAll(".remove");
+  remove.forEach((button) =>
+    button.addEventListener("click", function (event) {
+      const itemName = event.target.closest(".ccard").getAttribute("data-item");
+      removeFromCart(cart[itemName]);
+      cartView.insertAdjacentHTML(
+        "beforeend",
+        `<p id = "total">${price(cart)}</p>`,
+      );
+    }),
+  );
 }
