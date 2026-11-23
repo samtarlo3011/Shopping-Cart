@@ -27,7 +27,10 @@ function removeFromCart(item) {
   if (item.count === 0) {
     delete cart[item.name];
   }
-  document.getElementById("cart")
+  document.getElementById("cart").innerHTML =
+    `<button id = "ec"> Exit Cart</button>
+    <button id = "co"> Checkout</button>`;
+  createCart(cart, cartView);
 }
 function price(cart) {
   let p = 0;
@@ -94,16 +97,16 @@ vc.addEventListener("click", function () {
   );
 });
 
-const ec = document.getElementById("ec");
-ec.addEventListener("click", function () {
-  cartView.querySelectorAll(".ccard").forEach((el) => {
-    el.remove();
-  });
-  const p = document.getElementById("total");
-  p.remove();
-  cartView.style.display = "none";
-});
 function createCart(cart, container) {
+  const ec = document.getElementById("ec");
+  ec.addEventListener("click", function () {
+    cartView.querySelectorAll(".ccard").forEach((el) => {
+      el.remove();
+    });
+    const p = document.getElementById("total");
+    p.remove();
+    cartView.style.display = "none";
+  });
   Object.values(cart).forEach((item) => {
     injectC(item, container);
   });
