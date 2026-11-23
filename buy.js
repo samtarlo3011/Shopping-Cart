@@ -98,6 +98,7 @@ vc.addEventListener("click", function () {
 });
 
 function createCart(cart, container) {
+  
   const ec = document.getElementById("ec");
   ec.addEventListener("click", function () {
     cartView.querySelectorAll(".ccard").forEach((el) => {
