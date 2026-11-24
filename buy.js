@@ -6,7 +6,7 @@ const codes = {
   JustinSmellsGood_Kachow: 0,
   goycmiester: 2,
 };
-
+const cI = document.getElementById("cart_items")
 function addToCart(cart, item) {
   if (item.stock >= 1) {
     if (Object.values(cart).includes(item)) {
@@ -29,8 +29,13 @@ function removeFromCart(item) {
   }
   document.getElementById("cart").innerHTML =
     `<button id = "ec"> Exit Cart</button>
+    <div id = "cart_items">
+        
+    </div>
+    <p id = "total">${price(cart)}</p>
     <button id = "co"> Checkout</button>`;
-  createCart(cart, cartView);
+
+  createCart(cart, cI);
 }
 function price(cart) {
   let p = 0;
@@ -90,23 +95,20 @@ const cartView = document.getElementById("cart");
 const vc = document.getElementById("vc");
 vc.addEventListener("click", function () {
   cartView.style.display = "flex";
-  createCart(cart, cartView);
-  cartView.insertAdjacentHTML(
-    "beforeend",
-    `<p id = "total">${price(cart)}</p>`,
-  );
+  cI.style.display = "flex";
+  createCart(cart, cI);
 });
 
 function createCart(cart, container) {
-  
+  const p = document.getElementById("total");
+  p.innerHTML = price(cart);
   const ec = document.getElementById("ec");
   ec.addEventListener("click", function () {
     cartView.querySelectorAll(".ccard").forEach((el) => {
       el.remove();
     });
-    const p = document.getElementById("total");
-    p.remove();
     cartView.style.display = "none";
+    cI.style.display = "none";
   });
   Object.values(cart).forEach((item) => {
     injectC(item, container);
@@ -116,10 +118,6 @@ function createCart(cart, container) {
     button.addEventListener("click", function (event) {
       const itemName = event.target.closest(".ccard").getAttribute("data-item");
       removeFromCart(cart[itemName]);
-      cartView.insertAdjacentHTML(
-        "beforeend",
-        `<p id = "total">${price(cart)}</p>`,
-      );
     }),
   );
 }

@@ -91,7 +91,7 @@
 #cart{
   display: none;
   gap: 5px;
-  justify-content: center;
+  justify-content: space-around;
   background-color: black;
   width: 80vw;
   height: 80vh;
@@ -135,19 +135,29 @@
   height:8rem;
 }
 #total{
-  height:5rem;
-  width:5rem;
   font-size: 5rem;
   color:white;
   margin-top: auto;
   margin-left: auto;
-  margin-bottom: 1rem;
-  margin-right: auto;
+
 }
 #co{
   display: flex;
   margin-top: auto;
   margin-left: auto;
-  height: 4rem;
-  width: 4rem;
+  font-size: 4rem;
+}
+#cart_items{
+  display: none;
+  gap: 5px;
+  justify-content: space-around;
+  background-color: black;
+  width: 80vw;
+  height: 80vh;
+  font-size: 3rem;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  flex-wrap: wrap;
 }
