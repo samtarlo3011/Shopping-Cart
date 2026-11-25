@@ -6,7 +6,7 @@ const codes = {
   JustinSmellsGood_Kachow: 0,
   goycmiester: 2,
 };
-const cI = document.getElementById("cart_items")
+
 function addToCart(cart, item) {
   if (item.stock >= 1) {
     if (Object.values(cart).includes(item)) {
@@ -34,7 +34,7 @@ function removeFromCart(item) {
     </div>
     <p id = "total">${price(cart)}</p>
     <button id = "co"> Checkout</button>`;
-
+  let cI = document.getElementById("cart_items");
   createCart(cart, cI);
 }
 function price(cart) {
@@ -95,11 +95,12 @@ const cartView = document.getElementById("cart");
 const vc = document.getElementById("vc");
 vc.addEventListener("click", function () {
   cartView.style.display = "flex";
-  cI.style.display = "flex";
+  const cI = document.getElementById("cart_items");
   createCart(cart, cI);
 });
 
 function createCart(cart, container) {
+  
   const p = document.getElementById("total");
   p.innerHTML = price(cart);
   const ec = document.getElementById("ec");
@@ -108,10 +109,13 @@ function createCart(cart, container) {
       el.remove();
     });
     cartView.style.display = "none";
+    let cI = document.getElementById("cart_items");
     cI.style.display = "none";
   });
   Object.values(cart).forEach((item) => {
     injectC(item, container);
+    let cI = document.getElementById("cart_items");
+    cI.style.display = "flex";
   });
   const remove = document.querySelectorAll(".remove");
   remove.forEach((button) =>

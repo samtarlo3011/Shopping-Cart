@@ -101,6 +101,7 @@
   left:50%;
   transform: translate(-50%,-50%);
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 .ccard {
@@ -117,6 +118,8 @@
   text-align: center;
 }
 .ccount {
+  height:2rem;
+  margin-top: 10px;
   font-size: 2rem;
 }
 .ccimg {
@@ -125,8 +128,8 @@
 }
 .remove {
   margin-top: auto;
-  height: 55px;
-  font-size: 20px;
+  height: 20px;
+  font-size: 15px;
 }
 #ec{
   margin-right: auto;
@@ -149,15 +152,11 @@
 }
 #cart_items{
   display: none;
+  height:80%;
   gap: 5px;
-  justify-content: space-around;
+  justify-content: flex-start;
   background-color: black;
   width: 80vw;
-  height: 80vh;
   font-size: 3rem;
-  position: fixed;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
   flex-wrap: wrap;
 }
